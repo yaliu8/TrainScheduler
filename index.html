@@ -1,81 +1,86 @@
-!<!DOCTYPE html>
+!
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Train Scheduler</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body background= 'assets/hogwarts.jpg'>
 
-	<div class="container">
+<body background='assets/hogwarts.jpg'>
 
-		<div class="jumbotron jumbotron-fluid alert-success">
-		  <div class="container">
-		    <h1 class="display-3">Anytime is Train Time!</h1>
-		    <h2 class="lead">Choo Choo. Chee Chee.</h2>
-		  </div>
-		</div>
+  <div class="container">
+
+    <div class="jumbotron jumbotron-fluid alert-success">
+      <div class="container">
+        <h1 class="display-3">Anytime is Train Time!</h1>
+        <h2 class="lead">Choo Choo. Chee Chee.</h2>
+      </div>
+    </div>
 
 
-		<div class="card">
-		  <h4 class="card-header alert-primary">Current Train Schedule</h4>
-		  <div class="card-body">
+    <div class="card">
+      <h4 class="card-header alert-primary">Current Train Schedule</h4>
+      <div class="card-body">
 
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th>Train Name</th>
-			      <th>Destination</th>
-			      <th>Frequency (min)</th>
-			      <th>Next Arrival</th>
-            <th>Minutes Away</th>
-			    </tr>
-			  </thead>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency (min)</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+            </tr>
+          </thead>
 
-			  <tbody id="train-list">
+          <tbody id="train-list">
 
-			  </tbody>
-			</table>
+          </tbody>
+        </table>
 
-		  </div>
-		</div>
+      </div>
+    </div>
 
-		<hr></hr>
+    <hr></hr>
 
-		<div class="card">
-			<h4 class="card-header alert-primary">Add Train</h4>
-			<div class="card-body">
+    <div class="card">
+      <h4 class="card-header alert-primary">Add Train</h4>
+      <div class="card-body">
 
-			<form>
-			  <div class="form-group">
-			    <label>Train Name</label>
-			    <input type="text" class="form-control" id="train-input">
-			  </div>
-			  <div class="form-group">
-			    <label>Destination</label>
-			    <input type="text" class="form-control" id="destination-input">
-			  </div>
-			  <div class="form-group">
-			    <label>First Train Time (HH:mm - military time)</label>
-			    <input type="text" class="form-control" id="time-input">
-			  </div>
-			  <div class="form-group">
-			    <label>Frequency (min)</label>
-			    <input type="text" class="form-control" id="frequency-input">
-			  </div>
-			  <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
-			</form>
+        <form>
+          <div class="form-group">
+            <label>Train Name</label>
+            <input type="text" class="form-control" id="train-input">
+          </div>
+          <div class="form-group">
+            <label>Destination</label>
+            <input type="text" class="form-control" id="destination-input">
+          </div>
+          <div class="form-group">
+            <label>First Train Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="time-input">
+          </div>
+          <div class="form-group">
+            <label>Frequency (min)</label>
+            <input type="text" class="form-control" id="frequency-input">
+          </div>
+          <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+        </form>
 
-			</div>
-		 </div>
+      </div>
+    </div>
 
-	</div>
+  </div>
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-<script src="javascript/train.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="javascript/train.js"></script>
 
 </body>
+
 </html>
