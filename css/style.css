@@ -1,3 +1,29 @@
-.container {
-  background-color: lightskyblue;
+.alert-success {
+  color:  darkcyan;
+  background-color: lightcyan;
+  border-color: #c3e6cb;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lead {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+
+.form-group {
+  font-weight: bold;
+}
+
+.table {
+  background: darkblue;
+  color: white;
+}
+
+#train-list {
+  background: white;
+  color: black;
 }

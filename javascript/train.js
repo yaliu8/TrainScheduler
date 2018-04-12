@@ -6,7 +6,7 @@ var config = {
   projectId: "trainschedule-7e39e",
   storageBucket: "trainschedule-7e39e.appspot.com",
   messagingSenderId: "946599391886"
-};
+}
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -55,7 +55,7 @@ database.ref().on("child_added", function(snapshot) {
 	      	"</td><td>" + snapshot.val().trainDestination +
 	      	"</td><td>" + snapshot.val().trainFrequency +
 	      	"</td><td>" + snapshot.val().trainTime +
-          "</td><td>" + snapshot.val().timer
+          "</td><td>" + snapshot.val().timer 
 		);
   
     // Handle the errors
